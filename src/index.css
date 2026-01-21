@@ -1,0 +1,87 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Centering */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  overflow-x: hidden;
+}
+
+/* Card */
+.app {
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 320px;
+}
+
+/* Title */
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #0077ff, #ff4d4f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Counter Number */
+.count {
+  font-size: 64px;
+  font-weight: bold;
+  color: #0077ff;
+  margin-bottom: 30px;
+  transition: transform 0.2s ease;
+}
+
+/* Buttons */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.btn {
+  width: 52px;
+  height: 52px;
+  font-size: 22px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #0077ff;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: #005fcc;
+  transform: translateY(-2px);
+}
+
+.reset {
+  width: auto;
+  padding: 0 18px;
+  background: #ff4d4f;
+}
+
+.reset:hover {
+  background: #d9363e;
+}
+
+@media(max-width:768px){
+  .app{
+ max-width: 350px;
+  }
+ 
+}
